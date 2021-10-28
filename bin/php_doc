@@ -1,0 +1,5 @@
+#!/bin/sh
+
+FUNCTION=`echo $1 | sed 's/_/-/g'`
+#w3m -dump $HOME/.vim/doc/php/function.$FUNCTION.html | more
+lynx $HOME/.vim/bundle/vim-php-manual/manual/doc/$FUNCTION.phx

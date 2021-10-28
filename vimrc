@@ -6,8 +6,11 @@ filetype on
 "filetype off
 
 " Временные файл
-set backupdir=~/.tmpvim/
-set directory=~/.tmpvim/
+set backup
+set backupdir=~/.tmpvim,/tmp
+set directory=~/.tmpvim,/tmp
+set dir=~/.tmpvim,/tmp
+set undodir=~/.tmpvim,/tmp
 
 "load pathogen managed plugins
 call pathogen#runtime_append_all_bundles()
