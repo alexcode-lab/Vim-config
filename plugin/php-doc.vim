@@ -78,7 +78,7 @@ let g:pdv_cfg_CommentSingle = "//"
 let g:pdv_cfg_Type = "mixed"
 let g:pdv_cfg_Package = ""
 let g:pdv_cfg_Version = "0.1"
-let g:pdv_cfg_Author = "Alexandr Dorosh <dorosh.alexandr@gmail.com>"
+let g:pdv_cfg_Author = ""
 let g:pdv_cfg_Copyright = ""
 let g:pdv_cfg_License = "PHP Version 5.3"
 
