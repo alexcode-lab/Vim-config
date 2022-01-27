@@ -439,6 +439,7 @@ map <silent> <F3> :TagbarToggle<CR>
 autocmd FileType php noremap <buffer>  <F8> :call PhpCsFixerFixFile()<cr>
 autocmd FileType python noremap <buffer>  <F8> :call Autopep8()<cr>
 noremap <F8> :Autoformat<CR>
+noremap <F5> :make<CR>
 
 "Gundo"
 set undofile

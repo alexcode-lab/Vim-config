@@ -1,11 +1,11 @@
-# Clone configs to ~/.vim directory
+### Clone configs to ~/.vim directory
 
-# Create symlink to vimrc
+### Create symlink to vimrc
 ```
 echo "source ~/.vim/vimrc" > ~/.vimrc
 ```
 
-# directory for tmp files
+### directory for tmp files
 ```
 mkdir ~/.tmpvim
 ```
