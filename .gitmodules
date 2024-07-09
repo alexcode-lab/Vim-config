@@ -1,0 +1,51 @@
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "bundle/auto-pairs"]
+	path = bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
+[submodule "bundle/bufexplorer"]
+	path = bundle/bufexplorer
+	url = https://github.com/jlanzarotta/bufexplorer
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/preservim/nerdcommenter
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic
+[submodule "bundle/vim-autoformat"]
+	path = bundle/vim-autoformat
+	url = https://github.com/vim-autoformat/vim-autoformat
+[submodule "bundle/vim-autopep8"]
+	path = bundle/vim-autopep8
+	url = https://github.com/tell-k/vim-autopep8
+[submodule "bundle/vim-closetag"]
+	path = bundle/vim-closetag
+	url = https://github.com/alvan/vim-closetag
+[submodule "bundle/vim-indexed-search"]
+	path = bundle/vim-indexed-search
+	url = https://github.com/henrik/vim-indexed-search
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/preservim/vim-markdown.git
+[submodule "bundle/vim-php-cs-fixer"]
+	path = bundle/vim-php-cs-fixer
+	url = https://github.com/stephpy/vim-php-cs-fixer
+[submodule "bundle/vim-php-manual"]
+	path = bundle/vim-php-manual
+	url = https://github.com/alvan/vim-php-manual
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "pack/github/start/copilot.vim"]
+	path = pack/github/start/copilot.vim
+	url = https://github.com/github/copilot.vim
