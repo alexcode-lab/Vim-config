@@ -17,6 +17,19 @@ set directory=~/.tmpvim,/tmp
 set dir=~/.tmpvim,/tmp
 set undodir=~/.tmpvim,/tmp
 
+set undofile                " Save undos after file closes
+set undolevels=1000         " How many undos
+set undoreload=10000        " number of lines to save for undo
+
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
+augroup CursorLine
+    au!
+    au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+    au WinLeave * setlocal nocursorline
+augroup END
+
 "pathogen for includeing bundles
 execute pathogen#infect()
 
@@ -37,6 +50,16 @@ set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
 set ignorecase
 set smartcase
+
+" Improve the scrolling performance
+set lazyredraw
+set regexpengine=1
+
+" Enable mouse wheel scrolling
+set mouse=a
+
+" Set to auto read when a file is changed from the outside
+set autoread
 
 "Remove search highlight pressing space
 nnoremap <silent> <Space> :nohl<Bar>:echo<CR>
@@ -77,11 +100,12 @@ set softtabstop=4
 set expandtab
 set autoindent
 set tabstop=4
+set smarttab
 set fileformat=unix
 set textwidth=120
 
 "folding settings
-set foldmethod=indent   "fold based on indent
+set foldmethod=syntax
 set foldnestmax=3       "deepest fold is 3 levels
 set nofoldenable        "dont fold by default
 
@@ -172,20 +196,6 @@ set complete+=i
 " Setting dictionaries for complete
 autocmd FileType python set dictionary=$HOME/.vim/dict/python
 autocmd FileType php set dictionary=$HOME/.vim/dict/php
-
-" Setting Up Airline status line
-let g:airline#extensions#tagbar#enabled = 1
-let g:airline_theme='dark'
-
-let g:airline_enable_fugitive=0
-let g:airline_enable_syntastic=1
-let g:airline_enable_bufferline=1
-
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '◀'
-let g:airline_linecolumn_prefix = '¶ '
-let g:airline_paste_symbol = 'ρ'
-let g:airline_section_c = '%t'
 
 " mappings for NERDCommenter
 map ,ca           <Plug>NERDCommenterAltDelims
