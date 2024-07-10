@@ -41,7 +41,7 @@ set nocompatible
 set backspace=indent,eol,start
 
 "store lots of :cmdline history
-set history=1000
+set history=200
 
 set showcmd     "show incomplete cmds down the bottom
 set showmode    "show current mode down the bottom
@@ -301,9 +301,9 @@ set omnifunc=syntaxcomplete#Complete
 :set completeopt+=popup
 
 " Blade syntax highlighting as HTML
-"augroup filetypedetect
-  "au! BufRead,BufNewFile *.blade.php     setfiletype html
-"augroup END
+augroup filetypedetect
+  au! BufRead,BufNewFile *.blade.php     setfiletype html
+augroup END
 
 
 " Autocopmlete html tags
