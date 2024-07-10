@@ -4,6 +4,9 @@ filetype on
 "turn on syntax highlighting
 syntax on
 
+" Set encoding to UTF-8
+set encoding=utf-8
+
 set background=dark
 colorscheme neverland2-darker
 
@@ -20,8 +23,6 @@ execute pathogen#infect()
 "Use Vim settings, rather then Vi settings (much better!).
 "This must be first, because it changes other options as a side effect.
 set nocompatible
-
-set path+=**
 
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -151,6 +152,8 @@ vmap <C-j> <PageDown>
 nmap <C-k> <PageUp>
 vmap <C-k> <PageUp>
 
+imap <c-k> <Plug>snipMateTrigger
+
 " autocomplete
 set complete=""
 " current buffer
@@ -164,7 +167,7 @@ set complete+=t
 " other loaded windows
 set complete+=w
 " included files
-"set complete+=i
+set complete+=i
 
 " Setting dictionaries for complete
 autocmd FileType python set dictionary=$HOME/.vim/dict/python
@@ -213,7 +216,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
 
 " Auto close pairs
 "inoremap " ""<left>
@@ -289,9 +291,9 @@ set omnifunc=syntaxcomplete#Complete
 :set completeopt+=popup
 
 " Blade syntax highlighting as HTML
-augroup filetypedetect
-  au! BufRead,BufNewFile *.blade.php     setfiletype html
-augroup END
+"augroup filetypedetect
+  "au! BufRead,BufNewFile *.blade.php     setfiletype html
+"augroup END
 
 
 " Autocopmlete html tags
