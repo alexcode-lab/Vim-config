@@ -8,7 +8,7 @@ syntax on
 set encoding=utf-8
 
 set background=dark
-colorscheme neverland
+colorscheme neverland2
 
 " temprorary files
 set backup
