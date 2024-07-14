@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains my personal Vim configuration tailored for PHP and Python development. Below is a list of the plugins I use and instructions on how to set up the configuration.
+This repository contains my personal Vim configuration for PHP and Python development. Below is a list of the plugins I use and instructions on how to set up the configuration.
 
 ## Plugins Used
 
