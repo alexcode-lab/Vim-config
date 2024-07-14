@@ -69,8 +69,6 @@ set noshowmode
 " Enable GUI colors for terminals (Some terminals may not support this, so you'll have to *manually* set color pallet for tui colors. Lie tuibg=255, tuifg=120, etc.).
 set termguicolors
 
-
-
 " Understand statusline elements
 
 " %{StslineMode()}  = Output of a function
@@ -229,9 +227,6 @@ let b:FiletypeIcon = ' '
 
 elseif &filetype == 'vim'
 let b:FiletypeIcon = ' '
-
-elseif &filetype == ''
-let b:FiletypeIcon = ''
 
 elseif &filetype == 'rust'
 let b:FiletypeIcon = ' '

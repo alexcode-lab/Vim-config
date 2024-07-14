@@ -8,7 +8,7 @@ syntax on
 set encoding=utf-8
 
 set background=dark
-colorscheme neverland2-darker
+colorscheme neverland
 
 " temprorary files
 set backup
@@ -216,11 +216,6 @@ nnoremap <silent> <C-f> :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\.pyc$', '\.class$']
 
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКІЕГМЦЧНЯЖ;ABCDEFGHIJKLMNOPQRSTUVWXYZ:,фисвуапршолдьтщзйкіегмцчня;abcdefghijklmnopqrstuvwxyz
-
-" syntastic plugin settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
