@@ -25,6 +25,7 @@ This repository contains my personal Vim configuration for PHP and Python develo
 - [Vim Addon MW Utils](https://github.com/MarcWeber/vim-addon-mw-utils.git)
 - [Vim SnipMate](https://github.com/garbas/vim-snipmate)
 - [Vim Snippets](https://github.com/honza/vim-snippets)
+- [Neverland Vim Colorscheme](https://github.com/trapd00r/neverland-vim-theme)
 
 ## Installation
 
